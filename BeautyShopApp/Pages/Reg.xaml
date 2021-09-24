@@ -1,0 +1,29 @@
+﻿<Page x:Class="BeautyShopApp.Pages.Reg"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BeautyShopApp.Pages"
+        mc:Ignorable="d"
+        Title="" Height="450" Width="800">
+    <Grid>
+
+        <Label Content="Введите логин:" HorizontalAlignment="Center" Margin="432,159,276,265" VerticalAlignment="Center"/>
+        <TextBox x:Name="login" HorizontalAlignment="Center" Height="24" Margin="431,186,160,240" VerticalAlignment="Center" Width="209" TextChanged="SafeTextChanged"/>
+        <Label Content="Введите пароль:" HorizontalAlignment="Center" Margin="432,214,268,210" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="password" HorizontalAlignment="Center" Margin="431,240,160,186" VerticalAlignment="Center" Width="209" Height="24"/>
+        <Button x:Name="back" Click="back_Click" Content="Отмена" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="442,322,282,108" Width="76" />
+        <Button x:Name="reg" Click="reg_Click" Content="Регистрация" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="309,322,374,108" Width="117" />
+        <Label Content="Повторите пароль:" HorizontalAlignment="Center" Margin="433,260,252,164" VerticalAlignment="Center" Width="115"/>
+        <PasswordBox x:Name="password_Copy" HorizontalAlignment="Center" Margin="431,287,160,139" VerticalAlignment="Center" Width="209" Height="24"/>
+        <Label Content="Введите имя:" HorizontalAlignment="Center" Margin="218,159,490,265" VerticalAlignment="Center"/>
+        <TextBox x:Name="name" HorizontalAlignment="Center" Height="24" Margin="217,186,374,240" VerticalAlignment="Center" Width="209" TextChanged="SafeTextChanged"/>
+        <Label Content="Выберите должность:" HorizontalAlignment="Center" Margin="217,260,437,164" VerticalAlignment="Center" Width="146"/>
+        <TextBox x:Name="surname" HorizontalAlignment="Center" Height="24" Margin="217,240,374,186" VerticalAlignment="Center" Width="209" TextChanged="SafeTextChanged"/>
+        <Label Content="Введите фамилию:" HorizontalAlignment="Center" Margin="217,214,452,210" VerticalAlignment="Center" Width="131"/>
+        <ComboBox x:Name="post" HorizontalAlignment="Left" Margin="217,289,0,0" VerticalAlignment="Top" Width="209">
+            <ListBoxItem Content="Администратор"/>
+            <ListBoxItem Content="Работник"/>
+        </ComboBox>
+    </Grid>
+</Page>

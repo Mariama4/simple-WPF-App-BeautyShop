@@ -1,0 +1,29 @@
+﻿<Page x:Class="BeautyShopApp.Pages.PageStuffEdit"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BeautyShopApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageStuffEdit">
+
+    <Grid>
+        <Label Content="Логин:" HorizontalAlignment="Center" Margin="433,159,299,265" VerticalAlignment="Center" Width="68"/>
+        <TextBox x:Name="txtbLogin" HorizontalAlignment="Center" Height="24" Margin="431,186,160,240" VerticalAlignment="Center" Width="209" TextChanged="SafeTextChanged"/>
+        <Label Content="Пароль:" HorizontalAlignment="Center" Margin="433,214,291,210" VerticalAlignment="Center" Width="76"/>
+        <PasswordBox x:Name="pbPassword" HorizontalAlignment="Center" Margin="431,240,160,186" VerticalAlignment="Center" Width="209" Height="24"/>
+        <Button x:Name="btnUpdateUser" Click="btnUpdateUser_Click" Content="Сохранить" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="372,316,311,114" Width="117" />
+        <Label Content="Повторите пароль:" HorizontalAlignment="Center" Margin="433,260,252,164" VerticalAlignment="Center" Width="115"/>
+        <PasswordBox x:Name="pbPassword_Copy" HorizontalAlignment="Center" Margin="431,287,160,139" VerticalAlignment="Center" Width="209" Height="24"/>
+        <Label Content="Имя:" HorizontalAlignment="Center" Margin="217,159,518,265" VerticalAlignment="Center" Width="65"/>
+        <TextBox x:Name="txtbName" HorizontalAlignment="Center" Height="24" Margin="217,186,374,240" VerticalAlignment="Center" Width="209" TextChanged="SafeTextChanged"/>
+        <Label Content="Должность:" HorizontalAlignment="Center" Margin="217,260,437,164" VerticalAlignment="Center" Width="146"/>
+        <TextBox x:Name="txtbSurname" HorizontalAlignment="Center" Height="24" Margin="217,240,374,186" VerticalAlignment="Center" Width="209" TextChanged="SafeTextChanged"/>
+        <Label Content="Фамилия:" HorizontalAlignment="Center" Margin="217,214,452,210" VerticalAlignment="Center" Width="131"/>
+        <ComboBox x:Name="cbPost" HorizontalAlignment="Left" Margin="256,357,0,0" VerticalAlignment="Top" Width="209">
+            <ListBoxItem Content="Администратор"/>
+            <ListBoxItem Content="Работник"/>
+        </ComboBox>
+    </Grid>
+</Page>
